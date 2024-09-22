@@ -1,1 +1,1 @@
-# GPG_POD
+# GPU programming and parallel data processing
