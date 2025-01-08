@@ -12,7 +12,6 @@ __global__ void subtraction(double* a, double* b, double* result, long long n) {
 
 }
 
-
 int main(){
 
   long long n,i;
@@ -37,7 +36,6 @@ int main(){
 
   cudaMemcpy(gpu_a, a, n * sizeof(double), cudaMemcpyHostToDevice);
   cudaMemcpy(gpu_b, b, n * sizeof(double), cudaMemcpyHostToDevice);
-
 
   subtraction<<<1024, 1024>>>(gpu_a, gpu_b, gpu_result, n);
 
